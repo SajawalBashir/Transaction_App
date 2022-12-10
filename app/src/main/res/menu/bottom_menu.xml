@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+       android:id="@+id/debitFragment"
+       android:icon="@drawable/img"
+       android:title="Debit"
+       />
+
+   <item
+       android:id="@+id/totalAmountFragment"
+       android:icon="@drawable/total_amount"
+       android:title="Total Amount"
+       />
+
+   <item
+       android:id="@+id/creditFragment"
+       android:icon="@drawable/img"
+       android:title="Credit"
+       />
+
+</menu>

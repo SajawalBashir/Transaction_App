@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/totalAmountFragment">
+
+    <fragment
+        android:id="@+id/debitFragment"
+        android:name="com.example.transactionapp.debitFragment"
+        android:label="Debit"
+        tools:layout="@layout/fragment_debit" />
+    <fragment
+        android:id="@+id/totalAmountFragment"
+        android:name="com.example.transactionapp.totalAmountFragment"
+        android:label="Total Amount"
+        tools:layout="@layout/fragment_total_amount" />
+    <fragment
+        android:id="@+id/creditFragment"
+        android:name="com.example.transactionapp.creditFragment"
+        android:label="Credit"
+        tools:layout="@layout/fragment_credit" />
+</navigation>

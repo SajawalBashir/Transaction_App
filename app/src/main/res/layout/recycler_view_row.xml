@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageDebit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/red_arrow_up"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        android:layout_marginTop="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textDescDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Description"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toRightOf="@id/imageDebit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/imageDebit"
+        android:layout_marginLeft="25dp"
+        />
+
+    <TextView
+        android:id="@+id/textDateDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01-01-2022"
+        android:textSize="15dp"
+        android:textColor="#808080"
+        app:layout_constraintLeft_toRightOf="@id/imageDebit"
+        app:layout_constraintTop_toBottomOf="@id/textDescDebit"
+        app:layout_constraintStart_toStartOf="@id/textDescDebit"
+        app:layout_constraintRight_toRightOf="@id/textAmountDebit"
+        app:layout_constraintHorizontal_bias="0.2"
+        />
+
+
+
+    <TextView
+        android:id="@+id/textAmountDebit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="999"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/imageDebit"
+        app:layout_constraintTop_toTopOf="@id/imageDebit"
+        app:layout_constraintRight_toLeftOf="@id/line"
+        app:layout_constraintHorizontal_bias="0.9"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="3dp"
+        android:layout_height="40dp"
+        android:background="@color/red"
+        app:layout_constraintRight_toLeftOf="@id/imgDelete"
+        app:layout_constraintTop_toTopOf="@id/textAmountDebit"
+        app:layout_constraintBottom_toBottomOf="@id/textAmountDebit"
+        android:layout_marginRight="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/imgDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/delete_icon"
+
+        app:layout_constraintTop_toTopOf="@id/textAmountDebit"
+        app:layout_constraintBottom_toBottomOf="@id/textAmountDebit"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="15dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

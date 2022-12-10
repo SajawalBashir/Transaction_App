@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Transaction App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">C</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+
+</resources>
